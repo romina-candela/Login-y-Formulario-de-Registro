@@ -1,0 +1,161 @@
+body {
+    font-family:'montserrat';
+    margin: 0;
+    background: url(../imagenes/paisaje.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 400px;
+    background:rgba(255, 255, 255, 0.50);
+    padding: 20px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 4px 10px 34px #000;
+}
+
+.form_label {
+    font-weight: 500;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.titulo {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1b1464;
+}
+
+.visitandoCba {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campo {
+    width: 100%;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1b1464;
+    font-size: 16px;
+}
+
+.campo:focus {
+    border: 2px solid #0075FF;
+	outline: none;
+}
+
+.form_input_error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.form_input_error-activo {
+	display: block;
+}
+
+.nuevo p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.link {
+    color: #1b1464;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: #1b1464;
+    border-bottom: 1px solid;
+  }
+
+.grupo_boton {
+    grid-column: span 2;
+}
+
+.grupo_boton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boton {
+    align-items: center;
+    width:100%;
+    background: #1b1464;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight:bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: white;
+    color: #1b1464;
+    border: 1px solid #1b1464;
+    transition: 0.5s;
+}
+
+
+.continuar {
+    grid-column: span 2;
+}
+
+.continuar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.continuar {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1b1464;
+}
+
+.redes ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.redes ul li .icono:hover{
+    transform: translateY(-3px) scale(1.05);
+    text-decoration: none;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+
+.formulario_grupo-incorrecto .campo{
+    border: 1px solid red;
+}
+
+
+
+
+

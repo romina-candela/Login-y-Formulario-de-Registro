@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitando Córdoba</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form class="formulario">
+
+        <h1 class="titulo">LES DAMOS LA BIENVENIDA A </h1> 
+        <img class="visitandoCba" src="imagenes/logo.png" alt="visitando cordoba">
+            <div class="datos">
+
+                <!-- Grupo: usuario -->
+                <div class="formulario_grupo" id="grupo_usuario">
+                    <img src="imagenes/USUARIO.png" alt="" width="14px" height="14px"><label for="usuario" class="form_label">  Usuario: </label>
+                    <div>
+                        <input type="text" id="usuario" name="usuario" class="campo" placeholder="Ingrese su usuario">
+                    </div>
+                    <p class="form_input_error">Usuario inválido</p>
+                </div>
+
+                <!-- Grupo: usuario -->
+                <div class="formulario_grupo" id="grupo_password">
+                    <img src="imagenes/CONTRASEÑA.png" alt="" width="14px" height="14px"><label for="password" class="form_label">Contraseña:</label>
+                    <div>
+                        <input type="password" id="password" name="password"  class="campo" placeholder="Ingrese su contraseña">
+                    </div>
+                    <p class="form_input_error">Contraseña incorrecta</p>
+                </div>
+
+                <!-- Grupo: Boton -->
+              <div class="grupo_boton">
+                
+              <button type="submit" class="boton" onclick="">INICIAR SESIÓN</button>
+                
+              </div>
+                
+
+            </div>
+
+            <!-- Grupo: nuevo usuario -->
+            <div class="formulario_grupo" id="nuevoUsuario">   
+                <p class="nuevo"> ¿Nuevo Usuario? <a class="link" href="registro.html"> Registrase Aqui</a></p>
+            </div> 
+
+            <br>
+            <!-- Grupo: Redes -->
+            <div class="continuar"> <b>CONTINUAR CON:</b>
+                <div class="redes">
+                    <ul>
+                        <li><a href="#"><img src="imagenes/FACEBOOK.png" alt="Facebook" width="40px" height="40px" class="icono" title="Contiuar con Facebook"></a></li>
+                        <li><a href="#"><img src="imagenes/MAIL.png" alt="Mail" width="40px" height="40px" class="icono" title="Contiuar con tu E-Mail"></a></li>
+                        <li><a href="#"><img src="imagenes/GOOGLE.png" alt="Twitter" width="40px" height="40px" class="icono" title="Contiuar con Google"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

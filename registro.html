@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/estilosr.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario">
+    
+            <h1 class="titulo">REGISTRATE AHORA! </h1> 
+            
+                <div class="datos">
+
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario_grupo" id="grupo_nombre">
+                        <label for="nombre" class="form_label" >Nombre/s:</label>
+                        <div class="form_grupo_input">
+                            <input type="text" id="nombre" name="nombre" class="campo" placeholder="Ingrese su nombre">
+                        </div>
+                        <p class="form_input_error">El nombre debe contener solo letras</p>
+                    </div>
+
+                    <!-- Grupo: Apellido -->
+                    <div class="formulario_grupo" id="grupo_apellido">
+                        <label for="apellido" class="form_label" >Apellido:</label>
+                        <div class="form_grupo_input">
+                            <input type="text" id="apellido" name="apellido" class="campo" placeholder="ingrese su apellido">
+                         </div>
+                        <p class="form_input_error">El apellido debe contener solo letras</p>
+                    </div>
+
+                    <!-- Grupo: Fecha de Nac -->
+                    <div class="formulario_grupo" id="grupo_fechaNac">
+                        <label for="fechaNac" class="form_label">Fecha de Nacimiento:</label>
+                        <div class="form_grupo_input">
+                            <input type="date" id="fechaNac" name="fechaNac"  class="campo">
+                        </div>
+                    </div>
+
+                    <!-- Grupo: Email -->
+                    <div class="formulario_grupo" id="grupo_email">
+                        <label for="email" class="form_label">E-Mail:</label>
+                        <div class="form_grupo_input">
+                            <input type="email" id="email" name="email" class="campo" placeholder="Ingrese su E-mail">
+                        </div>
+                        <p class="form_input_error">Email invalido</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario_grupo" id="grupo_password">
+                        <img src="imagenes/CONTRASEÑA.png" alt="" class="icono" width="14px" height="14px"><label for="password" class="form_label">Contraseña:</label>
+                        <div class="form-grupo-input">
+                            <input type="password" id="password" name="password" class="campo">
+                        </div>
+                        <p class="form_input_error">La contraseña debe contener de 4 a 10 caracteres</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña2 -->
+                    <div class="formulario_grupo" id="grupo_password2">
+                        <img src="imagenes/CONTRASEÑA.png" alt="" class="icono" width="14px" height="14px"><label for="password2" class="form_label">Repetir Contraseña:</label>
+                        <div class="form-grupo-input">
+                            <input type="password" id="password2" name="password2" class="campo">
+                        </div>
+                        <p class="form_input_error">Ambas contraseñas deben ser iguales</p>
+                    </div>
+
+                </div>  
+
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario_grupo" id="terminos" >
+                    <label class="form_label" >
+                        <input class="form_check_input" type="checkbox" id="gridCheck">
+                        Acepto <a class="link" href="#">Términos y Condiciones</a>
+                    </label>
+                    <div class="form_mensaje" id="form_mensaje">
+                        <p>Por favor rellenar el formulario correctamente.</p>
+                    </div>
+                </div>
+
+            <br>
+            <!-- Grupo: Boton y Mensje -->
+            <div class="grupo_boton">
+                <button type="submit" class="boton">REGISTRARME</button>
+                <p class="form_mensaje_exito" id="form_mensaje_exito">Registro con éxito!</p>
+            </div>
+            
+             <!-- Grupo: Redes -->
+            <div class="continuar"> <b>Continuar con:</b>
+                <div class="redes">
+                    <ul>
+                        <li><a href="#"><img src="imagenes/FACEBOOK.png" alt="Facebook" width="40px" height="40px" class="icono" title="Contiuar con Facebook"></a></li>
+                        <li><a href="#"><img src="imagenes/MAIL.png" alt="Mail" width="40px" height="40px" class="icono" title="Contiuar con tu E-Mail"></a></li>
+                        <li><a href="#"><img src="imagenes/GOOGLE.png" alt="Twitter" width="40px" height="40px" class="icono" title="Contiuar con Google"></a></li>
+                    </ul>
+                </div>    
+            </div>     
+            
+        </form>
+    </div>
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>       
+</body>
+
+<footer>
+
+</footer>
+
+</html>

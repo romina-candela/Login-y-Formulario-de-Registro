@@ -1,0 +1,226 @@
+body {
+    font-family:montserrat;
+    margin: 0;
+    background: url(../imagenes/paisaje.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+
+.contenedor {
+    width: 600px;
+    background:rgba(255, 255, 255, 0.30);
+    padding: 20px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 4px 10px 34px #000;
+}
+
+.form_label {
+    font-weight: 500;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.titulo {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1b1464;
+}
+
+.visitandoCba {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campo {
+    position: relative;
+}
+
+.campo {
+    width: 100%;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1b1464;
+    font-size: 16px;
+}
+
+.campo:focus {
+    border: 2px solid #0075FF;
+	outline: none;
+}
+
+.form_input_error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.form_input_error-activo {
+	display: block;
+}
+
+.form_check_input {
+	margin-right: 10px;
+}
+
+.link {
+    color: #1b1464;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1b1464;
+    border-bottom: 1px solid;
+  }
+
+
+.form_mensaje {
+	height: 30px;
+	line-height: 30px;
+    font-size: 14px;
+    color:#000;
+	background: #ffe000;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form_mensaje-activo {
+	display: block;
+}
+
+.form_mensaje p {
+	margin: 0;
+}
+
+.grupo_boton {
+    grid-column: span 2;
+}
+
+.grupo_boton {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boton {
+    align-items: center;
+    width:50%;
+    background: #1b1464;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight:bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: white;
+    color: #1b1464;
+    border: 1px solid #1b1464;
+    transition: 0.5s;
+}
+
+.form_mensaje_exito {
+	font-size: 14px;
+	color: #1b1464;
+	display: none;
+}
+
+.form_mensaje_exito-activo {
+	display: block;
+}
+
+.continuar {
+    grid-column: span 2;
+}
+
+.continuar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.continuar {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1b1464;
+}
+
+.redes ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.redes ul li .icono:hover{
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario_grupo-incorrecto .form_label{
+    color: red;
+}
+
+.formulario_grupo-incorrecto .campo{
+    border: 1px solid red;
+}
+
+/* ----- -----  Mediaqueries ----- ----- */
+/*@media screen and (max-width: 800px) {
+	.formulario
+    .datos {
+		grid-template-columns: 1fr;
+	}
+
+    .grupo_boton {
+        grid-column: 1;
+    }
+
+    .continuar {
+        grid-column: 1;
+    }
+    
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.boton {
+		width: 100%;
+	}
+}*/
+
+
+
+
